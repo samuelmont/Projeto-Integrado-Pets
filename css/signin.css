@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#slider {
+    position: absolute;
+    background: linear-gradient(300deg, #5fb0db 0%, #17b598 60%, #86e9a4 100%);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.bolaMov1 {
+    background-color: #86e9a4;
+    opacity: 70%;
+    filter: blur(100px);
+    width: 480px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    bottom: 40px;
+    z-index: 4;
+    animation: rotar 8s infinite ease-in-out;
+    transform-origin: 50% -100%;
+}
+.bolaMov2 {
+    background-color: #86e9a4;
+    opacity: 60%;
+    filter: blur(60px);
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    right: 20%;
+    z-index: 5;
+    animation: gradient 6s infinite;
+}
+.bolaMov3 {
+    background-color: #17b598;
+    filter: blur(40px);
+    width: 400px;
+    height: 320px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 8;
+    animation: rotar 12s infinite ease-in-out;
+    transform-origin: -50% 100%;
+}
+.bolaMov4 {
+    background-color: #3191c6;
+    opacity: 90%;
+    filter: blur(100px);
+    width: 360px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    z-index: 1;
+    animation: gradient 7s infinite;
+}
+.bolaMov5 {
+    background-color: #86e9a4;
+    opacity: 70%;
+    filter: blur(50px);
+    width: 200px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    z-index: 6;
+    animation: rotar 5s infinite;
+    transform-origin: -100% -120%;
+}
+  
+@keyframes rotar {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0.5;
+    }
+    50% {
+      transform: rotate(50deg) scale(0.5);
+      opacity: 0.9;
+    }
+    100% {
+      transform: rotate(0deg);
+      opacity: 0.5;
+    }
+}
+  
+@keyframes gradient {
+    60% {
+      transform: scale(1.5) translate(-70%, -20%);
+    }
+}
+
+main {
+    height: 80vh;
+    width: 90vw;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#images {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#3191c6, #fff);
+    border-radius: 1rem 0 0 1rem;
+}
+
+#images span {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+#images div {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#images h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+#logo {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width: 8rem;
+
+}
+
+#banner {
+    height: 70%;
+}
+
+#form {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    color: #292933;
+}
+
+form {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form span {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: #3191c6;
+    border-radius: 0.4rem;
+    align-self: center;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    color: #292933;
+}
+
+form img {
+    width: 2rem;
+    margin: 0 0.5rem;
+}
+
+input {
+    width: 100%;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color: #292933;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+form button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    width: 60%;
+    background-color: #1b1b46;
+    color: #fff;
+    align-self: center;
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color: #292933;
+}
+
+#login button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+}
