@@ -17,6 +17,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/main.js" defer type="module"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
   <main>
     <div id="top-div">
         <a>
-          <img src="./imgs/add.svg" alt="Icone de uma pasta minimalista com um sinal de mais dentro">
+          <img src="./imgs/add.svg" alt="Icone de uma pasta minimalista com um sinal de mais dentro" id="add-pet">
         </a>
 
       <span>
@@ -50,9 +51,9 @@
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-tabs"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel-tabs"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel-tabs"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -76,6 +77,7 @@
     </div>
 
     <section id="card-container">
+      <!-- 
       <article class="cards">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQaUi1vdhI89FAJZs_dB0XSdupUeitdALaV7yG2uHIg&s" alt="Imagem de animais" class="animal-image">
         <div>
@@ -84,25 +86,8 @@
           <h2 class="color"><strong>Cor:</strong> Mel</h2>
           <h3 class="identifier"><strong>Id:</strong> 89</h3>
         </div>
-      </article>
-      <article class="cards">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQaUi1vdhI89FAJZs_dB0XSdupUeitdALaV7yG2uHIg&s" alt="Imagem de animais" class="animal-image">
-        <div>
-          <h1 class="name"><strong>Nome:</strong> Bull</h1>
-          <h2 class="race"><strong>Raça:</strong> Buldogue</h2>
-          <h2 class="color"><strong>Cor:</strong> Mel</h2>
-          <h3 class="identifier"><strong>Id:</strong> 89</h3>
-        </div>
-      </article>
-      <article class="cards">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQaUi1vdhI89FAJZs_dB0XSdupUeitdALaV7yG2uHIg&s" alt="Imagem de animais" class="animal-image">
-        <div>
-          <h1 class="name"><strong>Nome:</strong> Bull</h1>
-          <h2 class="race"><strong>Raça:</strong> Buldogue</h2>
-          <h2 class="color"><strong>Cor:</strong> Mel</h2>
-          <h3 class="identifier"><strong>Id:</strong> 89</h3>
-        </div>
-      </article>
+      </article> 
+      -->
     </section>
   </main>
 

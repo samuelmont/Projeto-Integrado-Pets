@@ -132,6 +132,10 @@ main {
     bottom: 0;
 }
 
+.carousel-indicators {
+    z-index: 1;
+}
+
 #card-container {
     width: 80vw;
     min-height: calc(85vh - 50rem);
@@ -148,7 +152,8 @@ main {
 }
 
 .animal-image {
-    height: 25rem;
+    width: 30rem;
+    height: 15rem;
     border-radius: 1rem;
     margin-right: 5rem;
 }
