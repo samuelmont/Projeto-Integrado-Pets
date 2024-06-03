@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/main.js" defer type="module"></script>
+</head>
+
+<body>
+  <header>
+    <img src="../imgs/Logo.svg" alt="Um cachorro e um texto loremipsum em baixo" id="logo">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Seila</li>
+        <li>Seinão</li>
+        <li>Issoai</li>
+      </ul>
+
+      <a href="../pages/login.html">
+        <img src="../imgs/user.svg" alt="Silhueta minimalista de uma pessoa" id="user">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="main-container">
+        <div id="image-container">
+            <img src="../imgs/Gatinho.png" alt="" id="pet-image">
+        </div>
+        <form id="register-form">
+            <h1>Cadastro</h1>
+            <h2>Preencha os campos para <br>adicionar um novo pet</h2>
+    
+            <span class="input-container">
+                <label for="name">Nome:</label>
+                <br>
+                <input type="text" name="name" id="name">
+            </span>
+
+            <span class="input-container">
+                <label for="color">Cor:</label>
+                <br>
+                <input type="text" name="color" id="color">
+            </span>
+
+            <span class="input-container">
+                <label for="race">Raça:</label>
+                <br>
+                <input type="text" name="race" id="race">
+            </span>
+            
+            <span class="input-container">
+                <label for="image">Imagem:</label>
+                <br>
+                <input type="text" name="image" placeholder="Link da imagem" id="image">
+            </span>
+    
+            <button type="submit" id="form-button">Enviar</button>
+        </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Feito por Samuel Monteiro</p>
+  </footer>
+</body>
+
+</html>

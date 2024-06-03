@@ -153,6 +153,7 @@ form button {
 #login {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #login label {
@@ -163,9 +164,13 @@ form button {
     color: #292933;
 }
 
-#login button {
+#login a button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #1b1b46;
+    color: #1b1b46;
 }
