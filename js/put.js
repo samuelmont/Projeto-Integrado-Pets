@@ -12,7 +12,7 @@ export const updateCard = () => {
             const statusCode = await updateData();
             if(statusCode == 200) {
                 localStorage.removeItem("attData");
-                document.location.href = '/index.html';
+                document.location.href = '/pages/home.html';
             } else {
                 console.log("Erro")
             }

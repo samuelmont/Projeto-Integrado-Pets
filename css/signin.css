@@ -125,6 +125,10 @@ input {
     width: 100%;
 }
 
+input:focus {
+    outline: none;
+}
+
 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;

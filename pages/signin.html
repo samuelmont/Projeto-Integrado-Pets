@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro</title>
+    <title>Cadastre um novo pet</title>
     <link rel="stylesheet" href="../css/signin.css">
 </head>
 
@@ -15,7 +15,6 @@
                 <img src="../imgs/Logo.svg" alt="Silhueta de uma pata de cachorro" id="logo">
             </span>
 
-
             <div>
                 <h1>Acervo de fotos fofas de pets</h1>
                 <img src="../imgs/dogLogin.png" alt="Cachorro olhando para a fotografia" id="banner">
@@ -24,7 +23,7 @@
         <div id="form">
             <h1>Crie sua conta</h1>
 
-            <form action="e">
+            <form>
                 <label for="username">Seu nome</label>
                 <span>
                     <img src="../imgs/user.svg" alt="">
@@ -42,14 +41,14 @@
                 <label for="password">Senha</label>
                 <span>
                     <img src="../imgs/password.svg" alt="">
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password">
                 </span>
                 <br>
 
                 <label for="re-password">Repita a senha</label>
                 <span>
                     <img src="../imgs/repassword.svg" alt="">
-                    <input type="text" name="re-password" id="re-password">
+                    <input type="password" name="re-password" id="re-password">
                 </span>
                 <br>
 
@@ -58,7 +57,9 @@
 
             <span id="login">
                 <label for="login">Já possui conta?</label>
-                <button name="login" id="login-button">Entrar</button>
+                <a href="../login.html">
+                    <button name="login" id="login-button">Entrar</button>
+                </a>
             </span>
         </div>
     </main>

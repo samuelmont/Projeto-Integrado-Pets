@@ -10,7 +10,7 @@ export const post = async () => {
 // Envia o usuario para a pagina principal caso receba status_code == 201
 const validation = (response) => {
     if(response == 201) {
-        document.location.href = '/index.html';
+        document.location.href = '/pages/home.html';
     }
 }
 

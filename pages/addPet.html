@@ -22,16 +22,17 @@
 
 <body>
   <header>
-    <img src="../imgs/Logo.svg" alt="Um cachorro e um texto loremipsum em baixo" id="logo">
+    <a href="./home.html">
+      <img src="../imgs/Logo.svg" alt="Pegada de um cachorro" id="logo">
+    </a>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Seila</li>
-        <li>Seinão</li>
-        <li>Issoai</li>
+        <a href="./home.html"></a>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="https://www.adotepetz.com.br/quero-adotar" target="_blank">Adote</a></li>
       </ul>
 
-      <a href="../pages/login.html">
+      <a href="../login.html">
         <img src="../imgs/user.svg" alt="Silhueta minimalista de uma pessoa" id="user">
       </a>
     </nav>
@@ -39,44 +40,46 @@
 
   <main>
     <div id="main-container">
-        <div id="image-container">
-            <img src="../imgs/Gatinho.png" alt="" id="pet-image">
-        </div>
-        <form id="register-form">
-            <h1>Cadastro</h1>
-            <h2>Preencha os campos para <br>adicionar um novo pet</h2>
-    
-            <span class="input-container">
-                <label for="name">Nome:</label>
-                <br>
-                <input type="text" name="name" id="name">
-            </span>
+      <div id="image-container">
+        <img src="../imgs/Gatinho.png" alt="Gato cinza olhando para o canto superior direito da tela" id="pet-image">
+      </div>
+      <form id="register-form">
+        <h1>Cadastro</h1>
+        <h2>Preencha os campos para <br>adicionar um novo pet</h2>
 
-            <span class="input-container">
-                <label for="color">Cor:</label>
-                <br>
-                <input type="text" name="color" id="color">
-            </span>
+        <span class="input-container">
+          <label for="name">Nome:</label>
+          <br>
+          <input type="text" name="name" id="name">
+        </span>
 
-            <span class="input-container">
-                <label for="race">Raça:</label>
-                <br>
-                <input type="text" name="race" id="race">
-            </span>
-            
-            <span class="input-container">
-                <label for="image">Imagem:</label>
-                <br>
-                <input type="text" name="image" placeholder="Link da imagem" id="image">
-            </span>
-    
-            <button type="submit" id="form-button">Enviar</button>
-        </form>
+        <span class="input-container">
+          <label for="color">Cor:</label>
+          <br>
+          <input type="text" name="color" id="color">
+        </span>
+
+        <span class="input-container">
+          <label for="race">Raça:</label>
+          <br>
+          <input type="text" name="race" id="race">
+        </span>
+
+        <span class="input-container">
+          <label for="image">Imagem:</label>
+          <br>
+          <input type="text" name="image" placeholder="Link da imagem" id="image">
+        </span>
+
+        <button type="submit" id="form-button">Enviar</button>
+      </form>
     </div>
   </main>
 
   <footer>
-    <p>Feito por Samuel Monteiro</p>
+    <a href="https://github.com/samuelmont">
+      <p>Feito por Samuel Monteiro</p>
+    </a>
   </footer>
 </body>
 

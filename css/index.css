@@ -58,7 +58,7 @@ ul {
     align-items: center;
 }
 
-ul li {
+ul li a{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -118,6 +118,10 @@ main {
     border: none;
     background: none;
     color: #1C274C;
+}
+
+#top-div span input:focus {
+    outline: none;
 }
 
 .carousel-item {
@@ -251,7 +255,7 @@ footer p {
 }
 
 /* Forms - Cadastro */
-#main-container {
+#main-container, #update-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -265,12 +269,25 @@ footer p {
     background: linear-gradient(90deg, rgba(28, 39, 76, 0.6), rgba(28, 39, 76, 0.4), rgba(255, 255, 255, 0));
 }
 
+#update-image-container {
+    height: 86vh;
+    width: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background: linear-gradient(-90deg, rgba(28, 39, 76, 0.6), rgba(28, 39, 76, 0.4), rgba(255, 255, 255, 0));
+}
+
 #pet-image {
     height: 70vh;
     -moz-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
+}
+
+#update-pet-image {
+    height: 70vh;
 }
 
 #register-form {
